@@ -16,7 +16,7 @@ export default function Page({ params }) {
     const callData = async () => {
         const id = params.userid;
         try {
-            const myRequest = await fetch(`http://localhost:3000/api/products/${id}`);
+            const myRequest = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products/${id}`);
             const response = await myRequest.json();
 
             if (response.newData) {
@@ -45,7 +45,7 @@ export default function Page({ params }) {
         
 
         try {
-            const request = await fetch(`http://localhost:3000/api/products/${id}`, {
+            const request = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products/${id}`, {
                 method: "PUT",
                 headers: {
                     'Content-Type': 'application/json',

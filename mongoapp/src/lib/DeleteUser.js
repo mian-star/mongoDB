@@ -29,7 +29,6 @@ export default function DeleteCom(props) { // Changed component name to DeleteCo
     return (
         <button
             onClick={myfun}
-            className="bg-red-600 text-white py-1 px-3 rounded-md font-semibold hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition duration-200 text-sm"
         >
             Delete User
         </button>

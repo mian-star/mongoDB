@@ -17,7 +17,7 @@ export default function Users() {
         // Simple age validation (optional)
 
         try {
-            let data = await fetch('http://localhost:3000/api/products', {
+            let data = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
