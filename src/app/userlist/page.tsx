@@ -38,7 +38,7 @@ export default function Page() {
 
       <div className="container mx-auto p-4">
         {realData.length === 0 ? (
-          <p className="text-center text-gray-600">No users found.</p>
+          <p className="text-center text-gray-600">Loading...</p>
         ) : (
           <ul className="space-y-4">
             {realData.map((ele) => (
